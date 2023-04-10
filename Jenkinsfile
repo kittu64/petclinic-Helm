@@ -7,7 +7,7 @@ pipeline {
                         sh 'cp -R helm/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
-                        sh '/usr/local/bin/helm  --install petclininc-app /var/lib/jenkins/workspace/petclinic-deployment  --set image.repository=registry.hub.docker.com/machendra1234/mydockerrepo1 --set image.tag=latest'
+                        sh '/usr/local/bin/helm  upgrade --install petclininc-app mydockerrepo1/helm/petclinic/  --set image.repository=registry.hub.docker.com/machendra1234/mydockerrepo1 --set image.tag=latest'
               			
             }           
         }
