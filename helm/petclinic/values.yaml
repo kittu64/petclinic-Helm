@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: machendra1234/mydockerrepo1
+  repository: kittu64/petclinic
   tag: latest
   pullPolicy: IfNotPresent
 
